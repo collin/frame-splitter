@@ -1,0 +1,20 @@
+{
+  "name": "frame-splitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "frames.js",
+  "scripts": {
+    "watch": "nodemon serve-gop.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "volleyball": "^1.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
