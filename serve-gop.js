@@ -23,9 +23,10 @@ const makeProbe = async (path) => {
   }
 };
 
-async function ensureFrameData(videoFilePath) {
-  jsonPath = videoFilePath + ".json";
+async function ensureFrameData (videoFilePath) {
+  const jsonPath = videoFilePath + ".json";
   try {
+    // fs stat throws if there's no file at the path
     await fs.stat(jsonPath);
   } catch (error) {
     await fs.writeFile(jsonPath, await makeProbe(videoFilePath));
